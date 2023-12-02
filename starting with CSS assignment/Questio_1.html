@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- internal_style -->
+    <style>
+        .internal{
+            color: blue;
+        }
+        .inline_internal{
+            color: darkgoldenrod;
+        }
+        .int_external{
+            color: fuchsia;
+        }
+        .inline_internal_external{
+            color: tomato;
+        }
+    </style>
+    <!-- depending on the order external wins between internal and external since I have -->
+    <!-- external imported after internal -->
+</head>
+<body>
+    <div style="color: red;">Inline</div>
+    <div class="internal">Internal</div>
+    <div class="external">External</div>
+    <div style="color: blueviolet;"  class="inline_internal">inline +internal</div>
+    <div class="int_external internal_ext">Internal+external</div>
+    <div style="color:blueviolet" class="inline_internal_external">Inline+Internal+external</div>
+
+</body>
+</html>

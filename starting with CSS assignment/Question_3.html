@@ -1,0 +1,61 @@
+<!-- 8 Develop an HTML form with various input elements. Use cSS to style the form, including setting 
+background colors for input fields. Create a custom color palette for the form elements, and demonstrate 
+how to apply opacity to one of the form sections -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_Q3</title>
+    <style>
+        .first_name{
+            background-color: red;
+        }
+        .last_name{
+            background-color: green;
+        }
+        .email{
+            background-color: yellow;
+        }
+        button{
+            opacity: 50%;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <label for="first_name">First Name :
+            <input type="text" name="first_name" placeholder="name" id="first_name" class="first_name">
+        </label><br>
+        <label for="last_name">Last Name:
+            <input type="text" name="last_name" placeholder="last_name" id="last_name" class="last_name">
+        </label> <br>
+        <label for="email">
+            <input type="email" name="email" class="email" id="email" placeholder="Enter the email">
+        </label><br>
+        <label for="password">Password
+            <input type="password" name="password" id="password" placeholder="*********">
+        </label><br>
+        <label for="Confirm_password">Confirm Password
+            <input type="password" name="C_password" id="C_password" placeholder="*********">
+        </label><br>
+        <label for="age">Age:
+            <input type="number" name="age" id="age" placeholder="21">
+        </label><br>
+        <label for="gender">gender:
+            <input type="radio" name="gender" value="gender" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="gender">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="gender" >
+            <label for="other">Other</label>
+        </label><br>
+        <label for="terms">Terms:
+            <input type="checkbox" id="terms"  >
+            <label for="">I agreeto terms and conditions</label>
+        </label><br>
+        <button>Register</button>
+    </form>
+
+</body>
+</html>
